@@ -11,3 +11,9 @@ async def wait_random(max_delay: int =10) -> float:
     """waits for a random number of secs and return the number of secs"""
     result: float = random.uniform(0, 10)
     return await asyncio.sleep(result, result)
+
+
+if __name__ == "__main__":
+    print(asyncio.run(wait_random()))
+    print(asyncio.run(wait_random(5)))
+    print(asyncio.run(wait_random(15)))
