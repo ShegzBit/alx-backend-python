@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """A module containing a function that returns a function that
 takes an argument and multiplies it to the argument of this function"""
 from typing import Callable
