@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """A module containing a function that adds all ints and floats passed to it
 and returns their float result"""
 from typing import List, Union

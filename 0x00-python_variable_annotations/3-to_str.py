@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """A module containing a method that takes a float and returns the string
 representation"""
 

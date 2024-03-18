@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 A module containing a floor method that returns math.floor of
 a float passed to it
