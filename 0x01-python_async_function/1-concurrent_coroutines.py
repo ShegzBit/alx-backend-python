@@ -14,7 +14,9 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """Gathers wait_random n times"""
-    return []
+    randoms = [wait_random(max_delay) for _ in range(n)]
+    futures = asyncio.as_completed(randoms)
+    return [await future for future in futures]
 
 
 if __name__ == "__main__":
