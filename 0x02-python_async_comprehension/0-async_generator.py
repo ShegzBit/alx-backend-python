@@ -11,4 +11,5 @@ from typing import Generator
 async def async_generator() -> Generator[float, None, None]:
     """An async generator of 10 random values"""
     for i in range(10):
-        yield await asyncio.sleep(1, result=random.uniform(0, 10))
+        await asyncio.sleep(1)
+        yield random.uniform(0, 10)
