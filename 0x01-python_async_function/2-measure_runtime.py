@@ -13,7 +13,8 @@ def measure_time(n: int, max_delay: int) -> float:
     """ Measures time average taken for each task"""
     start = time.perf_counter()
     wait_n(n, max_delay)
-    return (time.perf_counter() - start) / n
+    end = time.perf_counter()
+    return (end - start) / n
 
 
 if __name__ == "__main__":
